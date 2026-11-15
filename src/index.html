@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<title>Velvet Ledger | creator-owned platform (prototype)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="banner" role="note">Design prototype only. Not a working adult video host. No age verification, identity verification, payments or legal compliance exist here. Every creator and item is a fictional placeholder.</div>
+<header class="top">
+<a class="brand" href="#home"><span class="mark" aria-hidden="true">VL</span> Velvet Ledger</a>
+<button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main">
+<a href="#creators">Creators</a><a href="#explore">Explore</a><a href="#about">About</a><a href="#safety">Safety</a><a href="#submit">Submit</a><a href="#contact">Report</a>
+</nav>
+</header>
+<main>
+<section id="home" class="hero">
+<p class="eyebrow">Adults only concept</p>
+<h1>Your work. Your terms. Your ledger.</h1>
+<p class="lead">A concept for a platform where only verified adult creators publish work they own, with consent recorded and takedowns handled fast.</p>
+<p><a class="btn" href="#submit">Creator submission concept</a> <a class="btn ghost" href="#safety">How safety would work</a></p>
+<ul class="pillars">
+<li><strong>Owned</strong><span>Creators attest they hold all rights.</span></li>
+<li><strong>Consented</strong><span>Everyone shown must have consented.</span></li>
+<li><strong>Accountable</strong><span>Visible report and takedown path.</span></li>
+</ul>
+</section>
+
+<section id="creators"><h2>Featured creators</h2><p class="muted">Fictional placeholders. No real people or images.</p>
+<div class="grid" id="creator-grid"></div></section>
+
+<section id="explore"><h2>Explore</h2>
+<form id="filters" class="filters" role="search">
+<label>Search<input type="search" id="q" placeholder="name or tag" autocomplete="off" maxlength="60"></label>
+<label>Category<select id="cat"><option value="">All</option></select></label>
+<label>Sort<select id="sort"><option value="name">Name</option><option value="new">Newest</option></select></label>
+</form>
+<p id="count" class="muted" aria-live="polite"></p>
+<div class="grid" id="explore-grid"></div></section>
+
+<section id="about"><h2>About</h2>
+<p>Velvet Ledger is an original design study for a creator-owned model: rights stay with creators, rules are public, and trust and safety come before growth. It is not affiliated with or modeled on any existing adult site, and it contains no adult material.</p></section>
+
+<section id="safety"><h2>Safety and age gate (concept)</h2>
+<div class="cols">
+<div class="card"><h3>Age gate</h3><p>A real service would use an accredited third-party age assurance provider. The button below only demonstrates the layout and checks nothing.</p><button class="btn" id="gate-demo" type="button">Preview age gate</button></div>
+<div class="card"><h3>Creator verification</h3><p>A real service would verify ID and age of every creator and every performer, using a compliant provider, before anything goes live.</p></div>
+<div class="card"><h3>Record keeping</h3><p>Consent and ownership records, retention and reporting duties depend on jurisdiction and need legal counsel. None are implemented.</p></div>
+</div></section>
+
+<section id="submit"><h2>Creator submission (concept)</h2>
+<p class="notice">This form is a layout demo. It has no server, sends nothing and stores nothing. Do not enter real personal data.</p>
+<form id="submit-form" class="stack" novalidate>
+<label>Display name (fictional)<input id="s-name" maxlength="60" autocomplete="off" required></label>
+<label>Work description<textarea id="s-desc" rows="3" maxlength="300" required></textarea></label>
+<label class="check"><input type="checkbox" id="a1" required> I am 18 or older and legally able to publish.</label>
+<label class="check"><input type="checkbox" id="a2" required> I own or hold all rights to this work.</label>
+<label class="check"><input type="checkbox" id="a3" required> Every person shown is an adult who gave informed, documented consent to this use.</label>
+<button class="btn" type="submit">Check form (nothing is sent)</button>
+<p id="s-msg" role="status" aria-live="polite"></p>
+</form></section>
+
+<section id="contact"><h2>Contact, report and takedown</h2>
+<p>Placeholder process. No inbox is connected, and nothing on this page can receive reports.</p>
+<ol class="steps"><li>Identify the content and why it breaks the rules (non-consensual, underage, stolen, or other).</li><li>A real service would route it to a trained review team with fast removal.</li><li>Reporters would get a case reference and an outcome.</li></ol>
+<p class="notice">If you know of child sexual abuse material, report it to NCMEC (US) or your national hotline, and to local police. This prototype cannot take reports.</p></section>
+</main>
+<footer>
+<p><a href="privacy.html">Privacy (placeholder)</a> · <a href="terms.html">Terms (placeholder)</a></p>
+<p class="muted">Prototype for design discussion. Not legal advice. Not operational.</p>
+</footer>
+<div id="gate" class="gate" hidden role="dialog" aria-modal="true" aria-labelledby="gt"><div class="card"><h3 id="gt">Adults only (demo)</h3><p>Real age assurance would run here. This demo verifies nothing.</p><button class="btn" id="gate-close" type="button">Close demo</button></div></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
